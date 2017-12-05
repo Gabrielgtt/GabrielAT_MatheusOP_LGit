@@ -39,7 +39,7 @@ public class Recepcao {
 	public String toString() {
 		String hospedados = "Estadias:" + System.lineSeparator();
 		for (Estadia estadia : estadias) {
-			total += String.format("%s (%s): %d dias com o preço de R$ %.2f",
+			hospedados += String.format("%s (%s): %d dias com o preço de R$ %.2f",
 					estadia.getNome(), estadia.getTipo(), estadia.getDias(), estadia.getValor()) 
 					+ System.lineSeparator();
 		}
